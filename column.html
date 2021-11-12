@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Column</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body{
+            padding: 50px;
+        }
+        .heading{
+            color: rgb(150, 223, 252);
+            /* margin-bottom: 30px; */
+        }
+        .paragraph{
+           column-count: 3;
+           column-width: 300px;
+           column-rule: 3px solid rgb(89, 184, 221);
+           column-gap: 50px;
+        }
+        .paragraph p{
+           margin-bottom: 30px;
+           /* text-align: justify; */
+           line-height: 30px;
+        }
+        .full{
+            column-span: all;
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 480px) {
+            .heading{
+                margin-bottom: 20px;
+            }
+            body{
+                padding: 25px;
+            }
+            .full{
+                margin-top: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="heading">CSS3 Column Property</h1>
+    <div class="paragraph">
+        <p class="full">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae tenetur et voluptate voluptatum! Dicta veniam, id iure corrupti nam necessitatibus reprehenderit qui ea mollitia deleniti asperiores, placeat quae maiores?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam adipisci, voluptate cum non atque repellendus totam sint fugiat quod ea nemo. Dolores et sed at rem iusto id minus nam.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis nostrum debitis velit hic neque numquam enim similique consequuntur, fugiat aspernatur, soluta adipisci iusto fuga cumque ipsum quia, ipsa corporis?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos id minus repudiandae optio officiis laudantium doloremque architecto praesentium aliquam itaque asperiores possimus aspernatur blanditiis consequatur, eligendi, sit rerum voluptatum? Perferendis!
+        </p>
+
+        <p class="full">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolorum ratione ab quasi recusandae, quis debitis aliquid veniam voluptatibus earum? Laboriosam laudantium eos quibusdam iure consequuntur sequi. Mollitia, aperiam quia?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto natus optio architecto tempora libero? Quia, in? Laboriosam officia ab eveniet repudiandae perspiciatis laudantium, officiis sapiente ut exercitationem iste quas.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sapiente voluptates, sed necessitatibus, mollitia fuga eveniet, est assumenda veritatis praesentium natus in vitae doloremque laboriosam veniam debitis voluptatibus repellat expedita.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla illo, autem exercitationem tenetur laudantium dolore dolores nostrum reprehenderit enim repudiandae fugiat labore deleniti hic ipsum quae inventore! Delectus, obcaecati voluptas!
+        </p>
+       
+    </div>
+</body>
+</html>

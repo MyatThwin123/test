@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        html{
+            scroll-behavior: smooth;
+        }
+        .home{
+            /* width: 100%; */
+            height: 100vh;
+            background-image: url(nature-3.jpg);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 150px;
+            position: relative;
+            z-index: -2;
+        }
+        .home-content{
+            width: 350px;
+        }
+        .home::before{
+            content: "";
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            z-index: -1;
+            background: #2980B9;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            backdrop-filter: blur(30px);
+        }
+        .home-content-para{
+            color: rgb(146, 140, 140);
+        }
+        .up{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(90, 78, 78);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+        .up-icon{
+            width: 15px;
+        }
+        .fixed-icon{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 class="home-content-title">Hello Testing</h1>
+            <p class="home-content-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore obcaecati unde natus libero dolor accusamus corporis quasi eius facere illo soluta atque, nihil autem magnam rem culpa nam ratione.
+            </p>
+        </div>
+    </section>
+    
+    <section class="fixed-icon">
+        <a href="#home" class="up">
+            <svg class="up-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
+        </a>
+                
+    </section>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Shape</title>
+    <style>
+        div{
+            display: inline-block;
+        }
+        .square{
+            width: 50px;
+            height: 50px;
+            border: 3px solid #1d94b8;
+            
+        }
+        .rectangle{
+            width: 150px;
+            height: 50px;
+            border: 3px solid #1d94b8;
+            display: inline-block;
+        }
+        .rounded{
+            border-radius: 15px;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid #1d94b8;
+            background: #d5d5d5;
+        }
+        .img-circle{
+            width: 50px;
+            border-radius: 50%;
+        }
+        .bg-img{
+            background: url(nature-3.jpg);
+            background-size: 50px;
+        }
+        .triangle{
+            border: 50px solid #FFFFFF;
+            border-bottom-color: #1d94b8;
+        }
+        .rectangular-triangle{
+            border: 50px solid #ffffff;
+            border-right-color: #1d94b8;
+            border-bottom-color: #1d94b8;
+        }
+        .env{
+            border: 50px solid #d5d5d5;
+            border-top-color: #1d94b8;
+            border-bottom-width: 10px;
+            border-radius: 5px;
+        }
+        .home{
+            display: flex;
+        }
+      
+        .shape-1{
+            border: 50px solid #ffffff;
+            border-right-color: #1d94b8;
+            border-bottom-color: #1d94b8;
+            border-top-color: #1d94b8;
+        }
+        .shape-2{
+            border: 50px solid #1d94b8;
+            display: inline-block;
+        }
+        .shape-3{
+            border: 50px solid #ffffff;
+            border-left-color: #1d94b8;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <h1>HTML,CSS Shapes</h1>
+
+    <div class="square"></div>
+    <div class="square rounded"></div>
+    <div class="rectangle"></div>
+
+    <hr>
+
+    <div class="circle"></div>
+
+    <img  class="img-circle circle" src="nature.jpg" alt="">
+
+    <div class="circle bg-img"></div>
+
+    <hr>
+    
+    <div class="triangle"></div>
+    <div class="rectangular-triangle triangle"></div>
+    <div class="env"></div>
+
+    <hr>
+
+  <div class="home">
+    <div class="shape-1"></div>
+    <div class="shape-2"></div>
+    <div class="shape-3"></div>
+  </div>  
+    
+</body>
+</html>
